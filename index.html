@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<title>Austin Cai</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+<!--  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic">
+ <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+ <link rel="stylesheet" href="css/otherstyle.css"> -->
+
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" id="homenav" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" id="aboutnav" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#projects" id="projectnav" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PROJECTS</a>
+    <a href="#contact" id="contactnav" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a download href="resume/2017resume.pdf" id="resumenav" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-file-text"></i> RESUME</a>
+
+   <!--  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a> -->
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#projects" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJECTS</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+   
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">AUSTIN <span class="w3-hide-small">CAI</span> 
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+ <!--  <p class="w3-center"><em>I love photography</em></p> -->
+  <p>I am a Senior at the University of Michigan in the School of Information with a minor in Computer Science. With a primary focuse on information analysis, I also like to explore the realms of website development, iOS app development, and UI/UX. In my free time I try to work on this website. There will be monthly updates until I am satsifactory with how it looks.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+     
+      <img src="pictures/aboutpic.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+
+  <p class="w3-large w3-center w3-padding-16">Technological Prowess:</p>
+<!--   <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+  </div> -->
+  	<div class="w3-row" >
+  		<div class="w3-col m2 w3-red w3-center" id="skills"><h1><i class="devicon-cplusplus-plain"></i></h1></div>
+	
+	  <div class="w3-col m2 w3-yellow w3-center" id="skills"><h1><i class="devicon-python-plain "></i></h1></div> 
+	  <div class="w3-col m2 w3-blue w3-center" id="skills"><h1><i class="devicon-java-plain"></i></h1></div>
+	  <div class="w3-col m2 w3-teal w3-center" id="skills"><h1><i class="devicon-javascript-plain"></i></h1></div>
+	   <div class="w3-col m2 w3-blue w3-center" id="skills"><h1><i class="devicon-jquery-plain"></i></h1></div>
+	  <div class="w3-col m2 w3-green w3-center" id="skills"><h1><i class="devicon-html5-plain"></i></h1></div>
+	   
+	  
+	</div>
+	<br>
+	<div class="w3-row" >
+	  <div class="w3-col m2 w3-dark-grey w3-center" id="skills-"><h1><i class="devicon-css3-plain"></i></h1></div>
+		
+	 
+	  <div class="w3-col m2 w3-purple w3-center" id="skills"><h1><i class="devicon-bootstrap-plain"></i></h1></div>
+	   <div class="w3-col m2 w3-red w3-center" id="skills"><h1><i class="devicon-swift-plain"></i></h1></div>
+	 
+	<div class="w3-col m2 w3-black w3-center" id="skills"><h1><i class="devicon-git-plain"></i></h1></div>
+	 
+	   <div class="w3-col m2 w3-orange w3-center" id="skills"><h1><i class="devicon-illustrator-plain"></i></h1></div>
+	   <div class="w3-col m2 w3-light-blue w3-center" id="skills"><h1><i class="devicon-photoshop-plain"></i></h1></div>
+	  
+	  
+	</div>
+</div>
+
+<!-- <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">14+</span><br>
+    Partners
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">55+</span><br>
+    Projects Done
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">89+</span><br>
+    Happy Clients
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">150+</span><br>
+    Meetings
+  </div>
+</div> -->
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PROJECTS</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="projects">
+  <h3 class="w3-center">MY WORK</h3>
+  <p class="w3-center"><em>Code<br></em>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m4">
+      <img src="pictures/data.jpg" title="Data Analysis" style="width:45%" onclick="document.getElementById('datamodal').style.display='block'" class=" w3-opacity w3-hover-opacity-off" alt="Data Analysis">
+    </div>
+
+    <div class="w3-col m4">
+      <img src="pictures/iosapp.jpg" style="width:80%" onclick="document.getElementById('stylemodal').style.display='block'" class=" w3-opacity w3-hover-opacity-off" alt="Style Advisor">
+    </div>
+	
+	<div class="w3-col m4">
+      <img src="pictures/web1.jpg" style="width: 35%" onclick="document.getElementById('webmodal').style.display='block'" class=" w3-opacity w3-hover-opacity-off" alt="Website 1.0">
+    </div>
+ 
+
+   
+  </div>
+
+  <p class="w3-center"><em>UI/UX<br></em>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+  	 <div class="w3-col m3">
+     <p></p>
+    </div>
+     <div class="w3-col m3">
+      <img src="pictures/h20.jpg" style="width:50%" onclick="document.getElementById('h20modal').style.display='block'" class=" w3-opacity w3-hover-opacity-off" alt="H2O">
+    </div>
+    <div class="w3-col m3">
+       <img src="pictures/mangomodal.jpg" title="Mango" style="width:70%" onclick="document.getElementById('mangomodal').style.display='block'" class=" w3-opacity w3-hover-opacity-off" alt="Data Analysis">
+    </div>
+     <div class="w3-col m3">
+      <p></p>
+    </div>
+
+   
+  </div>
+	
+	<p class="w3-center"><em>Film<br></em>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col">
+      <img src="https://peiwc-test1445460803.netdna-ssl.com/wp-content/uploads/2016/02/san-francisco-is-americas-snobbiest-city-according-to-the-rest-of-the-country.jpg" title="Data Analysis" style="width:17%" onclick="document.getElementById('datamodal').style.display='block'" class=" w3-opacity w3-hover-opacity-off" alt="Data Analysis">
+    </div>
+
+   
+
+   
+  </div>
+
+
+
+</div>
+
+<!--Coding Modals-->
+<div class="w3-container">
+  <div id="datamodal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-dark-grey"> 
+        <span onclick="document.getElementById('datamodal').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h3>Grades to Riches</h3>
+      </header>
+      <div class="w3-container">
+        <p>Some text..</p>
+        <p>Some text..</p>
+      </div>
+      <footer class="w3-container w3-dark-grey">
+        <p>Link to Github</p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container">
+  <div id="stylemodal" class="w3-modal" >
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-dark-grey"> 
+        <span onclick="document.getElementById('stylemodal').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h3>Style Advisor</h3>
+      </header>
+      <div class="w3-container">
+      	<div class="modal-body">
+      		<p>Led a group of students to design and develop an iOS app to help college students find the right clothing brands for their lifestyle. Users asnwer several questions and based on their answers an algorithm determines which brand fits them them best. Created using Swift 2 and designed with Photoshop. Won best-in-session in class of 100 groups. </p>
+      		
+        	<img src="pictures/stylemodal.jpg" class="w3-round w3-image " alt="Photo of Me" width="800" >
+        	
+        </div>
+      </div>
+      <footer class="w3-container w3-dark-grey">
+        <p>Link to Github</p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="w3-container">
+  <div id="webmodal" class="w3-modal  " style="opacity:0.98;">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-dark-grey"> 
+        <span onclick="document.getElementById('webmodal').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h3>Website 1.0</h3>
+      </header>
+      <div class="w3-container">
+      	<div class="modal-body">
+      		<p>Designed and developed a website with Python, HTML, CSS, Bootstrap, and Javascript. Deployed with Google App Engine. </p>
+        	<img src="pictures/websitemodal.jpg" class="w3-round w3-image " alt="Photo of Website 1.0" width="720" >
+        	
+        </div>
+      </div>
+      <footer class="w3-container w3-dark-grey">
+        <p>Link to Github</p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+
+
+<!--UI/UX Modal-->
+<div class="w3-container">
+  <div id="h20modal" class="w3-modal" style="opacity:0.98;">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-dark-grey"> 
+        <span onclick="document.getElementById('h20modal').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>H20 - Human 2 Organization</h2>
+      </header>
+      <div class="w3-container">
+        <p>Some text..</p>
+        <p>Some text..</p>
+      </div>
+      <footer class="w3-container w3-dark-grey">
+        <p>Link to Github</p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+
+<div class="w3-container">
+  <div id="mangomodal" class="w3-modal" style="opacity:0.98;">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-dark-grey"> 
+        <span onclick="document.getElementById('mangomodal').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h3>My Favorite Fruit...</h3>
+      </header>
+      <div class="w3-container">
+        <p>Learned Photoshop and Adobe InDesign to design and create an infographic about mangoes with a focus on color harmony, typography, and visual cues.</p>
+        <img src="pictures/suppmodal.jpg" class="w3-round w3-image " alt="Photo of Me" width="800" >
+      </div>
+      <footer class="w3-container w3-dark-grey">
+        <a href="pictures/mangoinfo.pdf" target="_blank"><p>See full infographic</p></a>
+      </footer>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal for full size images on click-->
+<!-- <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div> -->
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">CONNECT WITH ME</h3>
+  
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <!-- Add Google Maps -->
+      <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Ann Arbor, US<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> +1 408-666-8669<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> haoliang@umich.edu
+        <br>
+      <div class="w3-large w3-section">
+      	<a href="https://www.linkedin.com/in/austinc123" target="_blank"><i class="fa fa-linkedin fa-fw w3-hover-opacity w3-xxlarge"></i></a>
+   		<a href ="https://github.com/austinc123" target="_blank"><i class="fa fa-github fa-fw w3-hover-opacity  w3-xxlarge"></i></a>
+    	<a href ="https://www.snapchat.com/add/haobling" target="_blank"><i class="fa fa-snapchat fa-fw w3-hover-opacity w3-xxlarge"></i></a>
+    	
+  
+      </div>
+      </div>
+      <p>Got feedback? Leave me a note:</p>
+      <form action="mailto:asianrat@gmail.com" method="post" enctype="text/plain">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer --> 
+<footer class="w3-center w3-black w3-opacity w3-hover-opacity-off">
+ 
+  <p>©2017 - Austin Cai </p>
+</footer>
+ 
+
+
+<script src="features.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZkMZslwQAE8a14-oXsfHY_dD4H6ARKi4&callback=myMap"></script>
+<!-- 
+ <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/jquery.backstretch.min.js"></script>
+        <script src="js/scripts.js"></script> -->
+<!-- <script src="features.js"></script> -->
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
+
