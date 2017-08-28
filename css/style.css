@@ -20,7 +20,7 @@ body, html {
 /* First image (Logo. Full height) */
 .bgimg-1 {
 
-    background-image: url('pictures/river_rock.jpg');
+    background-image: url('../pictures/river_rock.jpg');
     min-height: 100%;
 }
 
@@ -32,7 +32,7 @@ body, html {
 
 /* Third image (Contact) */
 .bgimg-3 {
-   background-image: url("pictures/tree.jpg");
+   background-image: url("../pictures/tree.jpg");
     min-height: 400px;
 }
 

@@ -1,19 +1,25 @@
-$("#myModal").on('hidden.bs.modal', function (e) { 
-  $("#myModal iframe").attr("src", $("#myModal iframe").attr("src")); 
-}); 
-
 
 $(document).ready(function(){
 
- 
+  //Stop Youtube Video from playing after closing modal
+    $('.w3-modal').each(function(){
+            var src = $(this).find('iframe').attr('src');
 
+        $(this).on('click', function(){
 
+            $(this).find('iframe').attr('src', '');
+            $(this).find('iframe').attr('src', src);
+
+        });
+    });
+
+  //Smooth Scrolling
    $('#homenav').click(function() {
 
     $('html,body').animate({
       scrollTop: $("#home").offset().top - 40}, 
       '1000'
-    );
+    ); 
     return false;
   });
 
@@ -46,12 +52,12 @@ $(document).ready(function(){
   
 });
 
-
+//Google Maps API
 function myMap () {
   myCenter=new google.maps.LatLng(42.277346, -83.738323);
   var mapOptions= {
     center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
+    zoom:12, scrollwheel: false, 
     mapTypeId:google.maps.MapTypeId.ROADMAP
   };
   var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
@@ -62,13 +68,6 @@ function myMap () {
   marker.setMap(map);
 }
 
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
 
 // Change style of navbar on scroll
 window.onscroll = function() {myFunction()};
@@ -93,14 +92,4 @@ function toggleFunction() {
     }
 }
 
-// $(".").on("show", function () {
-//   alert("works")
-//   $("body").addClass("modal-open");
-// }).on("hidden", function () {
-//   $("body").removeClass("modal-open")
-// });
-
-
-
-//scroll effect
 
