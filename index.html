@@ -350,7 +350,7 @@
       </div>
       </div>
       <p>Want to reach out? Leave me a note:</p>
-      <form action="mailto:asianrat@gmail.com" method="post" enctype="text/plain">
+    <!--   <form action="mailto:asianrat@gmail.com" method="post" enctype="text/plain">
         <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
           <div class="w3-half">
             <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
@@ -364,12 +364,19 @@
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
 
+      </form> -->
+       <form method="POST" action="http://formspree.io/asianrat@gmail.com">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" name="email" type="email" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" name="message" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" id="buttonclick" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+
       </form>
-     <!--  <form method="POST" action="http://formspree.io/asianrat@gmail.com">
-  <input type="email" name="email" placeholder="Your email">
-  <textarea name="message" placeholder="Your message"></textarea>
-  <button type="submit">Send</button>
-</form> -->
     </div>
   </div>
 </div>
