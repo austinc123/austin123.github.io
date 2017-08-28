@@ -1,3 +1,7 @@
+$("#myModal").on('hidden.bs.modal', function (e) { 
+  $("#myModal iframe").attr("src", $("#myModal iframe").attr("src")); 
+}); 
+
 
 $(document).ready(function(){
 
@@ -89,12 +93,14 @@ function toggleFunction() {
     }
 }
 
-$(".").on("show", function () {
-  alert("works")
-  $("body").addClass("modal-open");
-}).on("hidden", function () {
-  $("body").removeClass("modal-open")
-});
+// $(".").on("show", function () {
+//   alert("works")
+//   $("body").addClass("modal-open");
+// }).on("hidden", function () {
+//   $("body").removeClass("modal-open")
+// });
+
+
 
 //scroll effect
 

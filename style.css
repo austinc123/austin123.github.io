@@ -151,3 +151,15 @@ a:focus .video-link-icon {
     background: #fff;
     color: #e89a3e;
 }
+
+.modal-backdrop.in {
+    opacity: 0.9;
+}
+
+#sfvlog {
+    background-color: black;
+}
+
+#p-footer{
+    font-size: 13px;
+}
